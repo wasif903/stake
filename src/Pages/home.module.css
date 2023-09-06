@@ -1,10 +1,17 @@
+.home_wrapper {
+  height: 100vh;
+  padding-top: 3rem;
+}
+.home_container {
+  background: #1f0a31;
+}
 .wrapper {
-  background-color: #1f0a31;
+  /* background-color: #1f0a31; */
   padding: 80px;
 }
 
 .section {
-  width: 500px;
+  width: 100%;
 }
 
 .iconWrapper {
@@ -20,11 +27,19 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  /*Tablets [601px -> 1200px]*/
+  .iconWrapper {
+    border-radius: 4px;
+    background: #2c193b;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+  }
 }
 @media only screen and (max-width: 900px) {
   .wrapper {
     padding: 0px;
+  }
+  .section {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 420px) {
