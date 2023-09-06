@@ -79,7 +79,7 @@ function Home() {
           <Row className={styles.home_card_row}>
             <Col
               lg="6"
-              className={`d-flex justify-lg-content-start mb-5 mb-md-0 justify-content-center align-items-center`}
+              className={`d-flex justify-content-lg-start mb-5 mb-md-0 justify-content-center align-items-center`}
             >
               <div
                 className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
@@ -100,7 +100,7 @@ function Home() {
             </Col>
             <Col
               lg="6"
-              className={`d-flex justify-md-content-end justify-content-center align-items-center`}
+              className={`d-flex justify-content-md-end justify-content-center align-items-center`}
             >
               <div
                 className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
