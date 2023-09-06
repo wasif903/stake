@@ -70,7 +70,7 @@ function Home() {
         </Container>
 
         <Container className={`my-5 py-3`}>
-          <Row>
+          <Row className={styles.home_card_row}>
             <Col
               lg="6"
               className={`d-flex justify-lg-content-start mb-5 mb-md-0 justify-content-center align-items-center`}
@@ -129,17 +129,32 @@ function Home() {
           </Row>
         </Container>
         <Container className={`${styles.home_container} my-5 py-3`}>
-          <Row className={styles.home_crypto_row}>
-            <div className={styles.home_crypto_wrapper}>
-              <h2>No crypto? No Problem.</h2>
-            </div>
-            <div className={styles.home_crypto_icon}>
-              <img src={gpay} alt="" />
-              <img src={circle} alt="" />
-              <img src={gpay} alt="" />
-              <img src={circle} alt="" />
-            </div>
-          </Row>
+          <p className={styles.experience_heading}>
+            At INFINY, innovation is at our core. Our dedicated and talented
+            team is in the process of rolling out captivating mini-games
+            designed to ensure not only a safe gaming environment but also
+            promising high Returns to Player (RTP).
+          </p>
+          <div className={styles.experience_second_section}>
+            <h3>Unrivaled Gaming Experience</h3>
+            <p>
+              The thrill of the game comes with its risks. To partake in our
+              offerings, you must be 18 years or older. We urge our players to
+              be aware of their local online gaming regulations; INFINY is not
+              liable for any breaches of such laws. We advocate for responsible
+              gaming – immerse in the excitement, but always prioritize safety.
+            </p>
+          </div>
+          <div className={styles.experience_third_section}>
+            <p>
+              The thrill of the game comes with its risks. To partake in our
+              offerings, you must be 18 years or older. We urge our players to
+              be aware of their local online gaming regulations; INFINY is not
+              liable for any breaches of such laws. We advocate for responsible
+              gaming – immerse in the excitement, but always prioritize safety.
+            </p>
+            <h3>Unrivaled Gaming Experience</h3>
+          </div>
         </Container>
       </div>
     </>

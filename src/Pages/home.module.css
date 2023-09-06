@@ -68,6 +68,46 @@
   transition: 0.3s;
   background-color: #1f0a31 !important;
 }
+.experience_heading {
+  margin: auto;
+  padding: 0rem 15rem;
+  font-size: 1.4rem;
+}
+.experience_second_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0rem;
+}
+.experience_second_section h3 {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  color: white;
+}
+.experience_second_section p {
+  display: flex;
+  margin: 0;
+  width: 47rem;
+  font-size: 1.4rem;
+}
+.experience_third_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0rem;
+}
+.experience_third_section h3 {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  color: white;
+}
+.experience_third_section p {
+  display: flex;
+  margin: 0;
+  width: 47rem;
+  font-size: 1.4rem;
+  text-align: end;
+}
 @media only screen and (max-width: 1280px) {
   .iconWrapper {
     border-radius: 4px;
@@ -76,9 +116,12 @@
     margin: 10px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
   .wrapper {
     padding: 0px;
+  }
+  .home_card_row {
+    gap: 2rem;
   }
   .section {
     width: 100%;
@@ -90,6 +133,24 @@
   .home_crypto_icon img {
     width: 11vmin;
   }
+  .experience_heading {
+    padding: 0rem 2rem;
+    text-align: center;
+  }
+  .experience_second_section,
+  .experience_third_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .experience_third_section {
+    flex-direction: column-reverse;
+  }
+  .experience_second_section p,
+  .experience_third_section p {
+    width: auto;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 420px) {
   .wrapper {
@@ -100,5 +161,12 @@
   }
   .home_crypto_icon img {
     width: 16vmin;
+  }
+  .experience_heading,
+  .experience_second_section p,
+  .experience_third_section p,
+  .experience_second_section h3,
+  .experience_third_section h3 {
+    font-size: 5vmin;
   }
 }
