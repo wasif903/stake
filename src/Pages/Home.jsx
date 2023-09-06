@@ -7,6 +7,7 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/other/Header";
 import casinoImg from "../assets/home/sec2-col1.png";
 import esportImg from "../assets/home/sec2-col2.png";
+import TableList from "../components/other/Table/TableList";
 
 function Home() {
   const icons = [
@@ -73,10 +74,12 @@ function Home() {
               lg="6"
               className={`d-flex justify-lg-content-start mb-5 mb-md-0 justify-content-center align-items-center`}
             >
-              <div className={`text-center ${styles.cardSplitter} ${styles.home_container}`}>
+              <div
+                className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
+              >
                 <img
                   src={casinoImg}
-                  style={{ width: "100%", borderRadius:"12px" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                   alt="sec1-col1"
                 />
                 <p className="text-center pt-4 pb-2">
@@ -92,10 +95,12 @@ function Home() {
               lg="6"
               className={` d-flex justify-lg-content-end justify-content-center align-items-center`}
             >
-              <div className={`text-center ${styles.cardSplitter} ${styles.home_container}`}>
+              <div
+                className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
+              >
                 <img
                   src={esportImg}
-                  style={{ width: "100%", borderRadius:"12px" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                   alt="sec1-col1"
                 />
                 <p className="text-center pt-4 pb-2">
@@ -106,6 +111,10 @@ function Home() {
                 <button className={`btn ${styles.btn}`}>PLAY NOW</button>
               </div>
             </Col>
+          </Row>
+
+          <Row className="py-5">
+            <TableList />
           </Row>
         </Container>
       </div>

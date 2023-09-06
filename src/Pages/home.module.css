@@ -4,7 +4,7 @@
 }
 .home_container {
   background: #1f0a31;
-  border-radius: 12px ;
+  border-radius: 12px;
 }
 .wrapper {
   /* background-color: #1f0a31; */
@@ -53,7 +53,7 @@
   width: 55%;
   border: white solid 2px !important;
   transition: 0.3s;
-  background-color: #1f0a31  !important;
+  background-color: #1f0a31 !important;
 }
 
 @media only screen and (max-width: 1280px) {
