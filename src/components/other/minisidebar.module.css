@@ -8,6 +8,7 @@
   justify-content: center;
   transition: all 0.5s;
   padding: 1rem 0.5rem 0rem 0.5rem;
+  top: 6rem;
 }
 .sidebar_wrapper_active {
   transform: translateX(0%);
@@ -20,6 +21,7 @@
   justify-content: center;
   transition: all 0.5s;
   padding: 1rem 0.5rem 0rem 0.5rem;
+  top: 6rem;
 }
 .inner_sidebar {
   background: #2d1b3d;
@@ -80,6 +82,7 @@
     transition: all 0.5s;
     padding: 1rem 0.5rem 0rem 0.5rem;
     transform: translateX(-100%);
+    /* top: 6rem; */
   }
   .sidebar_wrapper_active {
     transform: translateX(0%);
@@ -92,5 +95,6 @@
     justify-content: center;
     transition: all 0.5s;
     padding: 1rem 0.5rem 0rem 0.5rem;
+    /* top: 6rem; */
   }
 }

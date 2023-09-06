@@ -12,7 +12,7 @@
   background: #150820;
 }
 .table_head {
-  width: 30rem;
+  width: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 32rem;
+  width: auto;
 }
 @media only screen and (max-width: 580px) {
   .responsive_table {
@@ -30,5 +30,16 @@
   }
   .responsive_table table {
     width: 100%;
+  }
+  .table_head {
+    width: 34rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .table_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 34rem;
   }
 }
