@@ -9,6 +9,7 @@ import casinoImg from "../assets/home/sec2-col1.png";
 import esportImg from "../assets/home/sec2-col2.png";
 import gpay from "../assets/crypto/Vector (1).svg";
 import circle from "../assets/crypto/Vector.svg";
+import Footer from "../components/other/Footer";
 
 function Home() {
   const icons = [
@@ -157,6 +158,7 @@ function Home() {
           </div>
         </Container>
       </div>
+      <Footer />
     </>
   );
 }
