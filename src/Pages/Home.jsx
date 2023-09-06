@@ -1,13 +1,28 @@
 import { Col, Container, Row } from "react-bootstrap";
 import sec1 from "../assets/home/sec1.jpg";
 import styles from "./home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
-  // const icons = [
-  //     {
-
-  //     }
-  // ]
+  const icons = [
+    {
+      id: 1,
+      icon: faFacebook,
+    },
+    {
+      id: 2,
+      icon: faFacebook,
+    },
+    {
+      id: 3,
+      icon: faFacebook,
+    },
+    {
+      id: 4,
+      icon: faFacebook,
+    },
+  ];
 
   return (
     <>
@@ -26,6 +41,18 @@ function Home() {
                 arms to embark on an exhilarating gaming journey.
               </p>
               <div className="text-center text-white">Start With :</div>
+              {icons.map((item) => (
+                <>
+                  <div className="d-inline-flex flex-wrap wrap">
+                    <div key={item.id} className={styles.iconWrapper}>
+                      <FontAwesomeIcon
+                        icon={faFacebook}
+                        className={styles.icon}
+                      />
+                    </div>
+                  </div>
+                </>
+              ))}
             </div>
           </Col>
           <Col lg="6">

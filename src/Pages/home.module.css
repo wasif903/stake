@@ -6,3 +6,15 @@
 .section {
   width: 500px;
 }
+
+.iconWrapper {
+  border-radius: 4px;
+  background: #2c193b;
+  padding: 10px 25px 10px 25px;
+  margin: 15px;
+}
+
+.icon {
+  color: white;
+  font-size: 25px;
+}
