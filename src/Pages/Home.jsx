@@ -41,13 +41,12 @@ function Home() {
       <Header setLoginModal={setLoginModal} />
       <div className={styles.home_wrapper}>
         <Container className={`${styles.home_container} py-4 py-lg-0`}>
-          <Row className={styles.wrapper}>
-            <Col
-              lg="6"
-              className="d-flex row justify-content-center align-items-center"
-            >
+          <Row
+            className={`d-flex justify-content-center align-items-center ${styles.wrapper}`}
+          >
+            <Col lg="6" className="d-flex justify-content-center align-items-center">
               <div className="text-center">
-                <h2 className="text-white">LOREM IPSUM</h2>
+                <h2 className="text-white">INFINITY</h2>
                 <p>
                   Welcome to INFINY, a pinnacle of creativity, elegance, and
                   security in the world of online betting. We pride ourselves on

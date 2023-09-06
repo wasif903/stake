@@ -159,6 +159,10 @@
     width: auto;
     text-align: center;
   }
+  .wrapper {
+    /* background-color: #1f0a31; */
+    padding: 0px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .wrapper {

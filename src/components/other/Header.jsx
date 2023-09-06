@@ -13,7 +13,7 @@ const Header = ({ setLoginModal }) => {
   return (
     <>
       <div className={style.header_wrapper}>
-        <div className={style.header_bars_wrapper}>
+        <div className={`d-flex align-items-center ${style.header_bars_wrapper}`}>
           {!isSidebar ? (
             <HiOutlineMenuAlt2
               className={style.header_bars}
