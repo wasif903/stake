@@ -1,5 +1,5 @@
 function Home() {
-  return <div style={{ color: "black" }}>Home</div>;
+  return <div className="bg-danger">Home</div>;
 }
 
 export default Home;
