@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/other/Header";
+import { useState } from "react";
 
 function Home() {
   const icons = [
