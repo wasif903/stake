@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className={style.header_wrapper}>
         <div className={style.header_bars_wrapper}>
-          {isSidebar ? (
+          {!isSidebar ? (
             <HiOutlineMenuAlt2
               className={style.header_bars}
               onClick={() => setIsideBar(!isSidebar)}
