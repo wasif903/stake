@@ -20,8 +20,6 @@
   display: flex;
   gap: 1rem;
 }
-.header_btn_wrapper button {
-}
 .header_btn_wrapper button:nth-child(1) {
   background: transparent;
   color: white;

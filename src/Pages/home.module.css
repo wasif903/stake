@@ -1,5 +1,12 @@
+.home_wrapper {
+  height: 100vh;
+  padding-top: 3rem;
+}
+.home_container {
+  background: #1f0a31;
+}
 .wrapper {
-  background-color: #1f0a31;
+  /* background-color: #1f0a31; */
   padding: 80px;
 }
 
