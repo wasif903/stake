@@ -1,5 +1,4 @@
 .home_wrapper {
-  height: 100vh;
   padding-top: 3rem;
 }
 .home_container {
@@ -39,9 +38,23 @@
   border-radius: 20px !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  width: 55%;
-  border: white solid 2px !important;
+  width: 70%;
   background-color: white !important;
+}
+.home_crypto_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home_crypto_wrapper {
+  padding: 1rem 3rem;
+  color: white;
+  width: auto !important;
+}
+.home_crypto_icon {
+  width: auto !important;
+  display: flex;
+  gap: 3rem;
 }
 
 .btn:hover {
@@ -55,7 +68,6 @@
   transition: 0.3s;
   background-color: #1f0a31 !important;
 }
-
 @media only screen and (max-width: 1280px) {
   .iconWrapper {
     border-radius: 4px;
@@ -71,9 +83,22 @@
   .section {
     width: 100%;
   }
+  .home_crypto_icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .home_crypto_icon img {
+    width: 11vmin;
+  }
 }
 @media only screen and (max-width: 420px) {
   .wrapper {
     padding: 0px;
+  }
+  .home_crypto_wrapper h2 {
+    font-size: 7vmin;
+  }
+  .home_crypto_icon img {
+    width: 16vmin;
   }
 }
