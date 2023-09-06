@@ -7,6 +7,7 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/other/Header";
 import casinoImg from "../assets/home/sec2-col1.png";
 import esportImg from "../assets/home/sec2-col2.png";
+import TableList from "../components/other/Table/TableList";
 import gpay from "../assets/crypto/Vector (1).svg";
 import circle from "../assets/crypto/Vector.svg";
 import Footer from "../components/other/Footer";
@@ -113,6 +114,10 @@ function Home() {
                 <button className={`btn ${styles.btn}`}>PLAY NOW</button>
               </div>
             </Col>
+          </Row>
+
+          <Row className="py-5">
+            <TableList />
           </Row>
         </Container>
 
