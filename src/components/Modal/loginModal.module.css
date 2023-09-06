@@ -1,0 +1,35 @@
+.modalWrapper {
+  z-index: 99999;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 45vh;
+  transform: translate(-50%, -50%);
+  background-color: #1f0a31;
+  border: solid 1px grey;
+  border-radius: 10px !important;
+}
+
+.btn {
+  color: #1f0a31 !important;
+  font-weight: 700 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: white !important;
+  border: white solid 2px !important;
+}
+
+.btn:hover {
+  color: white !important;
+  font-weight: 700 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border: white solid 2px !important;
+  transition: 0.3s;
+  background-color: #1f0a31 !important;
+}

@@ -10,6 +10,8 @@ import esportImg from "../assets/home/sec2-col2.png";
 import TableList from "../components/other/Table/TableList";
 import gpay from "../assets/crypto/Vector (1).svg";
 import circle from "../assets/crypto/Vector.svg";
+import { useState } from "react";
+import Login from "../components/Modal/Login";
 
 function Home() {
   const icons = [
@@ -31,9 +33,11 @@ function Home() {
     },
   ];
 
+  const [loginModal, setLoginModal] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header setLoginModal={setLoginModal} />
       <div className={styles.home_wrapper}>
         <Container className={`${styles.home_container} py-4 py-lg-0`}>
           <Row className={styles.wrapper}>
@@ -147,6 +151,14 @@ function Home() {
           </Row>
         </Container>
       </div>
+
+      {loginModal ? (
+        <div className={styles.overlay}>
+          <Login setLoginModal={setLoginModal} />
+        </div>
+      ) : (
+        ""
+      )}
     </>
   );
 }
