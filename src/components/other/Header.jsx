@@ -1,10 +1,13 @@
-import React, { useState } from "react";
 import style from "./header.module.css";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import logo from "../../assets/logo.png";
 import MiniSidebar from "./MiniSidebar";
 import { RxCross2 } from "react-icons/rx";
-const Header = () => {
+import { useState } from "react";
+
+// eslint-disable-next-line react/prop-types
+const Header = ({ setLoginModal }) => {
+
   const [isSidebar, setIsideBar] = useState(false);
 
   return (
@@ -27,10 +30,11 @@ const Header = () => {
           <img src={logo} alt="no img found" className={style.header_logo} />
         </div>
         <div className={style.header_btn_wrapper}>
-          <button>Log In</button>
+          <button onClick={() => setLoginModal(true)}>Log In</button>
           <button>Sign Up</button>
         </div>
       </div>
+
       <MiniSidebar isSidebar={isSidebar} />
     </>
   );

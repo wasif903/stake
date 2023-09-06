@@ -108,6 +108,14 @@
   font-size: 1.4rem;
   text-align: end;
 }
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(#0000, #0000, #0000, 0.7);
+  position: fixed;
+}
+
 @media only screen and (max-width: 1280px) {
   .iconWrapper {
     border-radius: 4px;
