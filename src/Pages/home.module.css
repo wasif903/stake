@@ -1,5 +1,4 @@
 .home_wrapper {
-  height: 100vh;
   padding-top: 3rem;
 }
 .home_container {
@@ -26,6 +25,34 @@
   font-size: 25px;
 }
 
+.cardSplitter {
+  width: 80%;
+}
+
+.btn {
+  color: #1f0a31 !important;
+  font-weight: 700 !important;
+  border-radius: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  width: 70%;
+  background-color: white !important;
+}
+.home_crypto_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.home_crypto_wrapper {
+  padding: 1rem 3rem;
+  color: white;
+  width: auto !important;
+}
+.home_crypto_icon {
+  width: auto !important;
+  display: flex;
+  gap: 3rem;
+}
 @media only screen and (max-width: 1280px) {
   .iconWrapper {
     border-radius: 4px;
