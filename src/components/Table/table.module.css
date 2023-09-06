@@ -7,21 +7,28 @@
 }
 .table_head {
   color: white;
-  
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
   background: #150820;
 }
-
-
-
-@media only screen and (max-width:480px)  {
+.table_head {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+.table_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 32rem;
+}
+@media only screen and (max-width: 580px) {
   .responsive_table {
     overflow-x: scroll !important;
     display: block;
     width: 100% !important;
-}
-.responsive_table table {
-  width: 100%;
-}
+  }
+  .responsive_table table {
+    width: 100%;
+  }
 }
