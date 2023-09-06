@@ -68,7 +68,7 @@ const tableData = [
 
 const TableList = () => {
   return (
-    <table responsive striped bordered hover variant="dark">
+    <table className={`${style.responsive_table}`} striped bordered hover>
       <thead>
         <tr className={`text-center ${style.table_head}`}>
           <th>Game </th>
