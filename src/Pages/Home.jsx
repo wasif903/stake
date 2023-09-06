@@ -3,6 +3,7 @@ import sec1 from "../assets/home/sec1.jpg";
 import styles from "./home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import Header from "../components/other/Header";
 import { useState } from "react";
 
@@ -14,7 +15,7 @@ function Home() {
     },
     {
       id: 2,
-      icon: faFacebook,
+      icon: faGoogle,
     },
     {
       id: 3,
@@ -22,7 +23,7 @@ function Home() {
     },
     {
       id: 4,
-      icon: faFacebook,
+      icon: faGoogle,
     },
   ];
 
@@ -30,7 +31,7 @@ function Home() {
     <>
       <Header />
       <div className={styles.home_wrapper}>
-        <Container className={styles.home_container}>
+        <Container className={`${styles.home_container} py-4 py-lg-0`}>
           <Row className={styles.wrapper}>
             <Col
               lg="6"
@@ -49,7 +50,7 @@ function Home() {
                   <div className="d-inline-flex flex-wrap wrap" key={index}>
                     <div key={item.id} className={styles.iconWrapper}>
                       <FontAwesomeIcon
-                        icon={faFacebook}
+                        icon={item.icon}
                         className={styles.icon}
                       />
                     </div>

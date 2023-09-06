@@ -11,7 +11,7 @@
 }
 
 .section {
-  width: 500px;
+  width: 100%;
 }
 
 .iconWrapper {
@@ -24,4 +24,26 @@
 .icon {
   color: white;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .iconWrapper {
+    border-radius: 4px;
+    background: #2c193b;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    padding: 0px;
+  }
+  .section {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .wrapper {
+    padding: 0px;
+  }
 }
