@@ -1,0 +1,15 @@
+.sidebar_wrapper {
+  background: #1f0a31;
+  height: 34rem;
+  position: absolute;
+  width: 4rem;
+  left: 0;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.inner_sidebar {
+  background: #2d1b3d;
+  height: 10rem;
+  width: 2rem;
+}
