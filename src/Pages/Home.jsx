@@ -3,6 +3,7 @@ import sec1 from "../assets/home/sec1.jpg";
 import styles from "./home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   const icons = [
@@ -12,7 +13,7 @@ function Home() {
     },
     {
       id: 2,
-      icon: faFacebook,
+      icon: faGoogle,
     },
     {
       id: 3,
@@ -20,7 +21,7 @@ function Home() {
     },
     {
       id: 4,
-      icon: faFacebook,
+      icon: faGoogle,
     },
   ];
 
@@ -29,8 +30,8 @@ function Home() {
       <Container>
         <Row className={styles.wrapper}>
           <Col
-            lg="6"
-            className="d-flex row justify-content-center align-items-center"
+            lg="6" md="12"
+            className="d-flex row justify-content-center align-items-center order-lg-1"
           >
             <div className="text-center">
               <h2 className="text-white">LOREM IPSUM</h2>
@@ -46,7 +47,7 @@ function Home() {
                   <div className="d-inline-flex flex-wrap wrap">
                     <div key={item.id} className={styles.iconWrapper}>
                       <FontAwesomeIcon
-                        icon={faFacebook}
+                        icon={item.icon}
                         className={styles.icon}
                       />
                     </div>
@@ -55,7 +56,7 @@ function Home() {
               ))}
             </div>
           </Col>
-          <Col lg="6">
+          <Col lg="6" md="12" className="order-lg-2">
             <div className="text-center">
               <img src={sec1} alt="img" className={styles.section} />
             </div>
