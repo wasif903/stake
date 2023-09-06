@@ -1,0 +1,13 @@
+.table_row:nth-child(odd) {
+  background: #2c193b !important;
+  color: white;
+}
+.table_row:nth-child(even) {
+  color: white;
+}
+.table_head {
+  color: white;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: #150820;
+}

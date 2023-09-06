@@ -1,6 +1,7 @@
 import { Table } from "react-bootstrap";
-import aceIcon from "../../../assets/home/cards.svg";
-import btcIcon from "../../../assets/home/btc.svg";
+import aceIcon from "../../assets/home/cards.svg";
+import btcIcon from "../../assets/home/btc.svg";
+import style from "./table.module.css";
 
 const tableData = [
   {
@@ -67,9 +68,9 @@ const tableData = [
 
 const TableList = () => {
   return (
-    <Table responsive striped bordered hover variant="dark" >
+    <table responsive striped bordered hover variant="dark">
       <thead>
-        <tr className="text-center">
+        <tr className={`text-center ${style.table_head}`}>
           <th>Game </th>
           <th>User </th>
           <th>Time </th>
@@ -80,7 +81,7 @@ const TableList = () => {
       </thead>
       <tbody>
         {tableData.map((rowData) => (
-          <tr className="text-center"  key={rowData.id}>
+          <tr className={`${style.table_row} text-center`} key={rowData.id}>
             <td>
               <span className="d-flex justify-content-center">
                 <img src={rowData.icon} className="pe-2" alt="" />
@@ -105,7 +106,7 @@ const TableList = () => {
           </tr>
         ))}
       </tbody>
-    </Table>
+    </table>
   );
 };
 
