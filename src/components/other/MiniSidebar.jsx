@@ -8,7 +8,13 @@ import card from "../../assets/sidebar-logos/Vector.svg";
 
 const MiniSidebar = ({ isSidebar }) => {
   return (
-    <div className={style.sidebar_wrapper}>
+    <div
+      className={
+        isSidebar
+          ? `${style.sidebar_wrapper_active}`
+          : `${style.sidebar_wrapper}`
+      }
+    >
       <div
         className={
           isSidebar ? `${style.inner_sidebar_active}` : `${style.inner_sidebar}`
