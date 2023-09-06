@@ -3,6 +3,7 @@
 }
 .home_container {
   background: #1f0a31;
+  border-radius: 12px;
 }
 .wrapper {
   /* background-color: #1f0a31; */
@@ -26,7 +27,9 @@
 }
 
 .cardSplitter {
-  width: 80%;
+  width: 90%;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .btn {
@@ -53,6 +56,18 @@
   display: flex;
   gap: 3rem;
 }
+
+.btn:hover {
+  color: white !important;
+  font-weight: 700 !important;
+  border-radius: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  width: 55%;
+  border: white solid 2px !important;
+  transition: 0.3s;
+  background-color: #1f0a31 !important;
+}
 @media only screen and (max-width: 1280px) {
   .iconWrapper {
     border-radius: 4px;
@@ -68,9 +83,22 @@
   .section {
     width: 100%;
   }
+  .home_crypto_icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .home_crypto_icon img {
+    width: 11vmin;
+  }
 }
 @media only screen and (max-width: 420px) {
   .wrapper {
     padding: 0px;
+  }
+  .home_crypto_wrapper h2 {
+    font-size: 7vmin;
+  }
+  .home_crypto_icon img {
+    width: 16vmin;
   }
 }

@@ -69,19 +69,21 @@ function Home() {
           </Row>
         </Container>
 
-        <Container className={`${styles.home_container} my-5 py-3`}>
+        <Container className={`my-5 py-3`}>
           <Row>
             <Col
               lg="6"
-              className="d-flex justify-content-center align-items-center"
+              className={`d-flex justify-lg-content-start mb-5 mb-md-0 justify-content-center align-items-center`}
             >
-              <div className={`text-center ${styles.cardSplitter}`}>
+              <div
+                className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
+              >
                 <img
                   src={casinoImg}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                   alt="sec1-col1"
                 />
-                <p className="text-center">
+                <p className="text-center pt-4 pb-2">
                   Browse our giant range of casino games as Stake offers a fair
                   and fun online gambling experience. Play Slots, Live Casino,
                   Blackjack, Baccarat.
@@ -92,15 +94,17 @@ function Home() {
             </Col>
             <Col
               lg="6"
-              className="d-flex justify-content-center align-items-center"
+              className={`d-flex justify-md-content-end justify-content-center align-items-center`}
             >
-              <div className={`text-center ${styles.cardSplitter}`}>
+              <div
+                className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
+              >
                 <img
                   src={esportImg}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                   alt="sec1-col1"
                 />
-                <p className="text-center">
+                <p className="text-center pt-4 pb-2">
                   Browse our giant range of casino games as Stake offers a fair
                   and fun online gambling experience. Play Slots, Live Casino,
                   Blackjack, Baccarat.
@@ -111,6 +115,19 @@ function Home() {
           </Row>
         </Container>
 
+        <Container className={`${styles.home_container} my-5 py-3`}>
+          <Row className={styles.home_crypto_row}>
+            <div className={styles.home_crypto_wrapper}>
+              <h2>No crypto? No Problem.</h2>
+            </div>
+            <div className={styles.home_crypto_icon}>
+              <img src={gpay} alt="" />
+              <img src={circle} alt="" />
+              <img src={gpay} alt="" />
+              <img src={circle} alt="" />
+            </div>
+          </Row>
+        </Container>
         <Container className={`${styles.home_container} my-5 py-3`}>
           <Row className={styles.home_crypto_row}>
             <div className={styles.home_crypto_wrapper}>
