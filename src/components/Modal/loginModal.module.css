@@ -33,3 +33,11 @@
   transition: 0.3s;
   background-color: #1f0a31 !important;
 }
+
+
+@media only screen and (max-width:480px)  {
+  .modalWrapper {
+    width: 90%;
+    height: 35vh;
+  }
+}
