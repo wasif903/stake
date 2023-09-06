@@ -4,6 +4,7 @@
 }
 .home_container {
   background: #1f0a31;
+  border-radius: 12px ;
 }
 .wrapper {
   /* background-color: #1f0a31; */
@@ -27,17 +28,32 @@
 }
 
 .cardSplitter {
-  width: 80%;
+  width: 90%;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .btn {
-    color: #1f0a31 !important;
-    font-weight: 700 !important;
-    border-radius: 20px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    width: 70%;
-    background-color: white !important;
+  color: #1f0a31 !important;
+  font-weight: 700 !important;
+  border-radius: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  width: 55%;
+  border: white solid 2px !important;
+  background-color: white !important;
+}
+
+.btn:hover {
+  color: white !important;
+  font-weight: 700 !important;
+  border-radius: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  width: 55%;
+  border: white solid 2px !important;
+  transition: 0.3s;
+  background-color: #1f0a31  !important;
 }
 
 @media only screen and (max-width: 1280px) {
