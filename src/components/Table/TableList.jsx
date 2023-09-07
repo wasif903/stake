@@ -1,4 +1,3 @@
-import { Table } from "react-bootstrap";
 import aceIcon from "../../assets/home/cards.svg";
 import btcIcon from "../../assets/home/btc.svg";
 import style from "./table.module.css";
@@ -68,7 +67,7 @@ const tableData = [
 
 const TableList = () => {
   return (
-    <table className={`${style.responsive_table}`} striped bordered hover>
+    <table className={`${style.responsive_table}`}>
       <thead>
         <tr className={`text-center ${style.table_head}`}>
           <th>Game </th>
