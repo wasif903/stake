@@ -102,7 +102,7 @@ function Homefeed() {
             </Col>
             <Col
               lg="6"
-              className={`d-flex justify-content-md-end justify-content-center align-items-center`}
+              className={`d-flex justify-content-lg-end justify-content-center align-items-center`}
             >
               <div
                 className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
