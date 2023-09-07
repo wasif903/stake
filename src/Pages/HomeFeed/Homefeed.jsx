@@ -1,18 +1,19 @@
 import { Col, Container, Row } from "react-bootstrap";
-import sec1 from "../../assets/home/sec1.jpg";
+import sec1 from "../../assets/home/sec1-img2.png";
 import styles from "./home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import Header from "../../components/other/Header";
 import casinoImg from "../../assets/home/sec2-col1.png";
-import esportImg from "../../assets/home/sec2-col2.png";
+import esportImg from "../../assets/home/sec2-col2.jfif";
 import TableList from "../../components/Table/TableList";
 import gpay from "../../assets/crypto/Vector (1).svg";
 import circle from "../../assets/crypto/Vector.svg";
 import Footer from "../../components/other/Footer";
 import { useState } from "react";
 import Login from "../../components/Modal/Login";
+import applePay from "../../assets/home/icon3.svg"
 
 function Homefeed() {
   const icons = [
@@ -49,7 +50,7 @@ function Homefeed() {
               className="d-flex justify-content-center align-items-center"
             >
               <div className="text-center">
-                <h2 className="text-white">INFINITY</h2>
+                <h2 className="text-white">Welcome To INFINITY</h2>
                 <p>
                   Welcome to INFINY, a pinnacle of creativity, elegance, and
                   security in the world of online betting. We pride ourselves on
@@ -109,7 +110,7 @@ function Homefeed() {
               >
                 <img
                   src={esportImg}
-                  style={{ width: "100%", borderRadius: "12px" }}
+                  style={{ width: "500px", borderRadius: "12px" }}
                   alt="sec1-col1"
                 />
                 <p className="text-center pt-4 pb-2">
@@ -135,7 +136,7 @@ function Homefeed() {
             <div className={styles.home_crypto_icon}>
               <img src={gpay} alt="" />
               <img src={circle} alt="" />
-              <img src={gpay} alt="" />
+              <img src={applePay} alt="" />
               <img src={circle} alt="" />
             </div>
           </Row>
