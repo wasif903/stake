@@ -57,6 +57,18 @@
   padding-bottom: 10px !important;
   width: 15%;
   background-color: white !important;
+  border: solid white 1px !important;
+}
+
+.togglerBtn:hover {
+  color: white !important;
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  width: 15%;
+  border: solid 1px white  !important;
+  background-color: #1f0a31 !important;
 }
 
 .home_crypto_row {
@@ -181,6 +193,17 @@
     /* background-color: #1f0a31; */
     padding: 0px;
   }
+  .togglerBtn {
+   
+    width: 50%;
+  
+  }
+  
+  .togglerBtn:hover {
+  
+    width: 50%;
+   
+  }
 }
 @media only screen and (max-width: 420px) {
   .wrapper {
@@ -221,3 +244,5 @@
 .container::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
