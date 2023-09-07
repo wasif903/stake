@@ -168,8 +168,10 @@ function Homefeed() {
             <h3>Unrivaled Gaming Experience</h3>
           </div>
         </Container>
+        <Container style={{ padding: "0" }}>
+          <Footer />
+        </Container>
       </div>
-      <Footer />
 
       {loginModal ? (
         <div className={styles.overlay}>

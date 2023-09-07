@@ -1,5 +1,7 @@
 .footer_wrapper {
   background: #1f0a31;
+  width: 100%;
+  border-radius: 10px;
 }
 .footer_container {
   padding: 7rem 0rem 1rem 0rem;
@@ -120,7 +122,7 @@
 }
 .copyright {
   text-align: center;
-  padding: 4rem 0rem 1rem;
+  padding: 1rem 0rem 1rem;
   border-top: 1px solid grey;
 }
 .copyright p {
@@ -144,6 +146,9 @@
   .footer_input_area {
     width: 25rem;
   }
+  /* .footer_wrapper {
+    width: 100%;
+  } */
 }
 @media screen and (max-width: 830px) {
   .footer_main,

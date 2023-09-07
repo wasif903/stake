@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import MiniSidebar from "../../components/other/MiniSidebar";
 import Homefeed from "./Homefeed";
 import Footer from "../../components/other/Footer";
+import style from "./home.module.css";
 
 const Home = () => {
   const [isSidebar, setIsideBar] = useState(false);
@@ -26,13 +27,15 @@ const Home = () => {
             style={{
               height: "100vh",
               overflowY: "scroll",
+              paddingBottom: "4rem",
             }}
+            className={style.homefeed_col}
           >
             <Homefeed />
+            {/* <Footer /> */}
           </Col>
         </Row>
       </Container>
-      {/* <Footer /> */}
     </div>
   );
 };

@@ -1,5 +1,11 @@
+.homefeed_col {
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 4rem;
+}
 .home_wrapper {
   padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 .home_container {
   background: #1f0a31;
@@ -181,4 +187,25 @@
   .experience_third_section h3 {
     font-size: 5vmin;
   }
+}
+
+/* Hide the default scrollbar */
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Customize the scrollbar track */
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb */
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* Customize the scrollbar thumb on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
