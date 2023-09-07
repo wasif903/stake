@@ -1,20 +1,20 @@
 import { Col, Container, Row } from "react-bootstrap";
-import sec1 from "../assets/home/sec1.jpg";
+import sec1 from "../../assets/home/sec1.jpg";
 import styles from "./home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import Header from "../components/other/Header";
-import casinoImg from "../assets/home/sec2-col1.png";
-import esportImg from "../assets/home/sec2-col2.png";
-import TableList from "../components/Table/TableList";
-import gpay from "../assets/crypto/Vector (1).svg";
-import circle from "../assets/crypto/Vector.svg";
-import Footer from "../components/other/Footer";
+import Header from "../../components/other/Header";
+import casinoImg from "../../assets/home/sec2-col1.png";
+import esportImg from "../../assets/home/sec2-col2.png";
+import TableList from "../../components/Table/TableList";
+import gpay from "../../assets/crypto/Vector (1).svg";
+import circle from "../../assets/crypto/Vector.svg";
+import Footer from "../../components/other/Footer";
 import { useState } from "react";
-import Login from "../components/Modal/Login";
+import Login from "../../components/Modal/Login";
 
-function Home() {
+function Homefeed() {
   const icons = [
     {
       id: 1,
@@ -38,13 +38,16 @@ function Home() {
 
   return (
     <>
-      <Header setLoginModal={setLoginModal} />
+      {/* <Header setLoginModal={setLoginModal} /> */}
       <div className={styles.home_wrapper}>
         <Container className={`${styles.home_container} py-4 py-lg-0`}>
           <Row
             className={`d-flex justify-content-center align-items-center ${styles.wrapper}`}
           >
-            <Col lg="6" className="d-flex justify-content-center align-items-center">
+            <Col
+              lg="6"
+              className="d-flex justify-content-center align-items-center"
+            >
               <div className="text-center">
                 <h2 className="text-white">INFINITY</h2>
                 <p>
@@ -179,4 +182,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Homefeed;

@@ -1,14 +1,12 @@
 .sidebar_wrapper {
   background: #1f0a31;
-  height: 250vh;
-  position: absolute;
-  left: 0;
+  height: 100vh;
   border-bottom-right-radius: 10px;
   display: flex;
   justify-content: center;
   transition: all 0.5s;
-  padding: 1rem 0.5rem 0rem 0.5rem;
-  top: 6rem;
+  padding: 1rem 0.5rem 0rem 0rem;
+  width: 5rem;
 }
 .sidebar_wrapper_active {
   transform: translateX(0%);
@@ -70,7 +68,7 @@
   opacity: 1;
   transition: all 0.5s;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .sidebar_wrapper {
     background: #1f0a31;
     height: 250vh;

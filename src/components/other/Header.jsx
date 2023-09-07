@@ -6,14 +6,13 @@ import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-const Header = ({ setLoginModal }) => {
-
-  const [isSidebar, setIsideBar] = useState(false);
-
+const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
   return (
     <>
       <div className={style.header_wrapper}>
-        <div className={`d-flex align-items-center ${style.header_bars_wrapper}`}>
+        <div
+          className={`d-flex align-items-center ${style.header_bars_wrapper}`}
+        >
           {!isSidebar ? (
             <HiOutlineMenuAlt2
               className={style.header_bars}
@@ -35,7 +34,7 @@ const Header = ({ setLoginModal }) => {
         </div>
       </div>
 
-      <MiniSidebar isSidebar={isSidebar} />
+      {/* <MiniSidebar isSidebar={isSidebar} /> */}
     </>
   );
 };
