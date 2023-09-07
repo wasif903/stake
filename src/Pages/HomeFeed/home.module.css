@@ -48,6 +48,17 @@
   width: 70%;
   background-color: white !important;
 }
+
+.togglerBtn {
+  color: #1f0a31 !important;
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  width: 15%;
+  background-color: white !important;
+}
+
 .home_crypto_row {
   display: flex;
   align-items: center;

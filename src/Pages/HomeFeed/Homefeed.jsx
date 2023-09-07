@@ -13,7 +13,7 @@ import circle from "../../assets/crypto/Vector.svg";
 import Footer from "../../components/other/Footer";
 import { useState } from "react";
 import Login from "../../components/Modal/Login";
-import applePay from "../../assets/home/icon3.svg"
+import applePay from "../../assets/home/icon3.svg";
 
 function Homefeed() {
   const icons = [
@@ -36,6 +36,10 @@ function Homefeed() {
   ];
 
   const [loginModal, setLoginModal] = useState(false);
+
+  const [selector, setSelector] = useState(false);
+
+  const sectionToggler = () => setSelector(!selector);
 
   return (
     <>
@@ -158,16 +162,49 @@ function Homefeed() {
               gaming – immerse in the excitement, but always prioritize safety.
             </p>
           </div>
-          <div className={styles.experience_third_section}>
-            <p>
-              The thrill of the game comes with its risks. To partake in our
-              offerings, you must be 18 years or older. We urge our players to
-              be aware of their local online gaming regulations; INFINY is not
-              liable for any breaches of such laws. We advocate for responsible
-              gaming – immerse in the excitement, but always prioritize safety.
-            </p>
-            <h3>Unrivaled Gaming Experience</h3>
+          <div className="text-center">
+            {selector === true ? (
+              ""
+            ) : (
+              <button
+                className={`btn ${styles.togglerBtn}`}
+                onClick={sectionToggler}
+              >
+                See More
+              </button>
+            )}
           </div>
+          {
+            <>
+              <div
+                className={`${
+                  selector ? styles.experience_third_section : "d-none"
+                } `}
+              >
+                <p>
+                  The thrill of the game comes with its risks. To partake in our
+                  offerings, you must be 18 years or older. We urge our players
+                  to be aware of their local online gaming regulations; INFINY
+                  is not liable for any breaches of such laws. We advocate for
+                  responsible gaming – immerse in the excitement, but always
+                  prioritize safety.
+                </p>
+                <h3>Unrivaled Gaming Experience</h3>
+              </div>
+              <div className="text-center">
+                {selector === false ? (
+                  ""
+                ) : (
+                  <button
+                    className={`btn ${styles.togglerBtn}`}
+                    onClick={sectionToggler}
+                  >
+                    See Less
+                  </button>
+                )}
+              </div>
+            </>
+          }
         </Container>
         <Container style={{ padding: "0" }}>
           <Footer />
