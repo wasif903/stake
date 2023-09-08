@@ -35,7 +35,6 @@ function Homefeed() {
     },
   ];
 
-  const [loginModal, setLoginModal] = useState(false);
 
   const [selector, setSelector] = useState(false);
 
@@ -211,14 +210,7 @@ function Homefeed() {
         </Container>
       </div>
 
-      {loginModal ? (
-        <div className={styles.overlay}>
-          
-          <Login setLoginModal={setLoginModal} />
-        </div>
-      ) : (
-        ""
-      )}
+     
     </>
   );
 }

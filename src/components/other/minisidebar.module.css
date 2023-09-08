@@ -84,8 +84,8 @@
   .sidebar_wrapper_active {
     transform: translateX(0%);
     background: #1f0a31;
-    height: 250vh;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     left: 0;
     border-bottom-right-radius: 10px;
     display: flex;
