@@ -114,7 +114,7 @@ function Homefeed() {
               >
                 <img
                   src={esportImg}
-                  style={{ width: "500px", borderRadius: "12px" }}
+                  style={{ width: "100%", borderRadius: "12px" }}
                   alt="sec1-col1"
                 />
                 <p className="text-center pt-4 pb-2">
@@ -213,6 +213,7 @@ function Homefeed() {
 
       {loginModal ? (
         <div className={styles.overlay}>
+          
           <Login setLoginModal={setLoginModal} />
         </div>
       ) : (

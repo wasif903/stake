@@ -5,9 +5,12 @@ import MiniSidebar from "../../components/other/MiniSidebar";
 import Homefeed from "./Homefeed";
 import Footer from "../../components/other/Footer";
 import style from "./home.module.css";
+import Login from "../../components/Modal/Login";
 
 const Home = () => {
   const [isSidebar, setIsideBar] = useState(false);
+
+  const [loginModal, setLoginModal] = useState(false);
 
   return (
     <div
@@ -16,7 +19,11 @@ const Home = () => {
         overflow: "hidden",
       }}
     >
-      <Header setIsideBar={setIsideBar} isSidebar={isSidebar} />
+      <Header
+        setIsideBar={setIsideBar}
+        isSidebar={isSidebar}
+        setLoginModal={setLoginModal}
+      />
       <Container fluid>
         <Row>
           <Col lg="1" style={{ padding: "0" }}>
@@ -36,6 +43,13 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+      {loginModal ? (
+        <div className={style.overlay}>
+          <Login setLoginModal={setLoginModal} />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
