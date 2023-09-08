@@ -5,6 +5,11 @@
   align-items: center;
   padding: 1rem 0.5rem;
 }
+
+.mobHeaderWrapper {
+  display: none;
+}
+
 .header_bars_wrapper {
   display: flex;
   gap: 5rem;
@@ -13,6 +18,10 @@
   width: 2.5rem;
 }
 .header_bars {
+  color: white;
+  font-size: 2.5rem;
+}
+.header_barsX {
   color: white;
   font-size: 2.5rem;
 }
@@ -32,12 +41,62 @@
   border: none;
   border-radius: 7px;
 }
+
+@media only screen and (max-width: 990px) {
+  .mobHeaderWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .header_bars {
+    display: none;
+  }
+  .header_bars_wrapper {
+    flex-direction: row-reverse !important;
+  }
+  .mob_bars {
+    color: white;
+    font-size: 1.7rem !important;
+  }
+
+  .mob_barsHome {
+    color: #1f0a31;
+    font-size: 1.7rem !important;
+  }
+  .mob_barsSearch {
+    color: white;
+    font-size: 1.5rem !important;
+  }
+
+  .wrapHomeIcon {
+    background: white;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: -35px;
+  }
+
+  .mobHeader {
+    background: #1f0a31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0.5rem;
+    width: 80%;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 5px;
+    border: 2px solid white;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .header_bars_wrapper {
     gap: 2rem;
   }
   .header_bars {
     font-size: 2rem;
+    display: none;
   }
   .header_logo {
     font-size: 1.5rem;

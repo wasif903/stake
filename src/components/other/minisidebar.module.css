@@ -70,8 +70,8 @@
 @media screen and (max-width: 990px) {
   .sidebar_wrapper {
     background: #1f0a31;
-    height: 250vh;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     left: 0;
     border-bottom-right-radius: 10px;
     display: flex;
