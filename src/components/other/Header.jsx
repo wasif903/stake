@@ -4,8 +4,10 @@ import logo from "../../assets/logo.png";
 import MiniSidebar from "./MiniSidebar";
 import { RxCross2 } from "react-icons/rx";
 import { AiFillHome } from "react-icons/ai";
-import { BsSearch } from "react-icons/bs";
+import { BsChatText, BsSearch } from "react-icons/bs";
 import { useState } from "react";
+import { BsAward } from "react-icons/bs";
+import { FaAward } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
 const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
@@ -45,10 +47,23 @@ const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
               style={{ cursor: "pointer" }}
             />
           </div>
+          <div>
+            <BsChatText
+              className={style.mob_bars}
+              onClick={() => setIsideBar(!isSidebar)}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
           <div className={style.wrapHomeIcon}>
             <AiFillHome
               className={style.mob_barsHome}
               onClick={() => setIsideBar(false)}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
+          <div className="d-flex flex-column text-end">
+            <BsAward
+              className={style.mob_barsSearch}
               style={{ cursor: "pointer" }}
             />
           </div>
