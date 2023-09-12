@@ -1,7 +1,10 @@
 import style from "./footer.module.css";
 import { Container } from "react-bootstrap";
+import { IoSendSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className={style.footer_wrapper}>
       <Container fluid className={style.footer_container}>
@@ -13,7 +16,9 @@ const Footer = () => {
                 <ul className="text-center">
                   <li>Terms & Condition</li>
                   <li>KYC Policy</li>
-                  <li>Responsible Gaming</li>
+                  <li onClick={() => navigate("/responsible-gaming")}>
+                    Responsible Gaming
+                  </li>
                   <li>Privacy Policy</li>
                   <li>FAQ</li>
                 </ul>

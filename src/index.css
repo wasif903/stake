@@ -3,6 +3,7 @@
 body {
   background: linear-gradient(180deg, #150820 0%, #00000b 100%);
   color: white;
+  background-repeat: no-repeat;
 }
 
 p {
