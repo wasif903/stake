@@ -15,7 +15,9 @@ const Footer = () => {
               <div className={style.our_services}>
                 <h3 className="text-center">QUICK LINKS</h3>
                 <ul className="text-center">
-                  <li>Terms & Condition</li>
+                  <li onClick={() => navigate("/terms-and-condition")}>
+                    Terms & Condition
+                  </li>
                   <li>KYC Policy</li>
                   <li onClick={() => navigate("/responsible-gaming")}>
                     Responsible Gaming

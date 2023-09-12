@@ -7,3 +7,13 @@
     padding: 3rem 1rem;
   }
 }
+@media screen and (max-width: 340px) {
+  .Responsible_Gaming_wrapper h1,
+  .Responsible_Gaming_wrapper h2,
+  .Responsible_Gaming_wrapper h3 {
+    font-size: 8vmin;
+  }
+  .Responsible_Gaming_wrapper p {
+    font-size: 4.5vmin;
+  }
+}
