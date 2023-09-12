@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/other/Header";
 import { Container } from "react-bootstrap";
 import style from "./responsibleGaming.module.css";

@@ -1,6 +1,5 @@
 import style from "./footer.module.css";
 import { Container } from "react-bootstrap";
-import { IoSendSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
