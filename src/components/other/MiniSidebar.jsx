@@ -1,10 +1,10 @@
 import style from "./minisidebar.module.css";
 
-import sidebar1 from "../../assets/sidebar-logos/sidebar1.png";
-import sidebar2 from "../../assets/sidebar-logos/sidebar2.png";
-import sidebar3 from "../../assets/sidebar-logos/sidebar3.png";
-import sidebar4 from "../../assets/sidebar-logos/sidebar4.png";
-import sidebar5 from "../../assets/sidebar-logos/sidebar5.png";
+import sidebar1 from "../../assets/sidebar-logos/side1.png";
+import sidebar2 from "../../assets/sidebar-logos/side2.png";
+import sidebar3 from "../../assets/sidebar-logos/side3.png";
+import sidebar4 from "../../assets/sidebar-logos/side4.png";
+import sidebar5 from "../../assets/sidebar-logos/side5.png";
 
 const MiniSidebar = ({ isSidebar }) => {
   return (

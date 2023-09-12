@@ -6,6 +6,11 @@ import { AiFillHome } from "react-icons/ai";
 import { BsChatText, BsSearch } from "react-icons/bs";
 import { BsAward } from "react-icons/bs";
 
+import sidebar1 from "../../assets/home/side1.png";
+import sidebar2 from "../../assets/home/side2.png";
+import sidebar3 from "../../assets/home/side3.png";
+import sidebar4 from "../../assets/home/side4.png";
+import sidebar5 from "../../assets/home/side5.png";
 // eslint-disable-next-line react/prop-types
 const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
   return (
@@ -41,37 +46,42 @@ const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
       <div className={style.mobHeaderWrapper}>
         <div className={style.mobHeader}>
           <div>
-            <HiOutlineMenuAlt2
+            {/* <HiOutlineMenuAlt2
               className={style.mob_bars}
               onClick={() => setIsideBar(!isSidebar)}
               style={{ cursor: "pointer" }}
-            />
+            /> */}
+            <img src={sidebar1} />
           </div>
           <div>
-            <BsChatText
+            {/* <BsChatText
               className={style.mob_bars}
               onClick={() => setIsideBar(!isSidebar)}
               style={{ cursor: "pointer" }}
-            />
+            /> */}
+            <img src={sidebar2} />
           </div>
           <div className={style.wrapHomeIcon}>
-            <AiFillHome
+            {/* <AiFillHome
               className={style.mob_barsHome}
               onClick={() => setIsideBar(false)}
               style={{ cursor: "pointer" }}
-            />
+            /> */}
+            <img src={sidebar3} />
           </div>
           <div className="d-flex flex-column text-end">
-            <BsAward
+            {/* <BsAward
               className={style.mob_barsSearch}
               style={{ cursor: "pointer" }}
-            />
+            /> */}
+            <img src={sidebar4} />
           </div>
           <div className="d-flex flex-column text-end">
-            <BsSearch
+            {/* <BsSearch
               className={style.mob_barsSearch}
               style={{ cursor: "pointer" }}
-            />
+            /> */}
+            <img src={sidebar5} />
           </div>
         </div>
       </div>

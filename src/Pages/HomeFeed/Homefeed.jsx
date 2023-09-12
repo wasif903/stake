@@ -16,7 +16,8 @@ import { useState } from "react";
 import gcash from "../../assets/home/gpay.png";
 import mayapay from "../../assets/home/mayapay.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import "swiper/element/css/autoplay"; // Import Swiper CSS
 
 function Homefeed() {
   const icons = [
@@ -46,7 +47,6 @@ function Homefeed() {
 
   return (
     <>
-      {/* <Header setLoginModal={setLoginModal} /> */}
       <div className={styles.home_wrapper}>
         <Container className={`${styles.home_container} py-4 py-lg-0`}>
           <Row
@@ -78,7 +78,16 @@ function Homefeed() {
               </div>
             </Col>
             <Col lg="6">
-              <Swiper spaceBetween={10} slidesPerView={1}>
+              <Swiper
+                autoplay={{
+                  delay: 4000, // 4 seconds
+                  disableOnInteraction: false, // Continue autoplay after user interaction
+                }}
+                modules={[Autoplay]}
+                spaceBetween={10}
+                slidesPerView={1}
+                style={{ zIndex: 0 }}
+              >
                 {sliderImgs.map((img, index) => {
                   return (
                     <SwiperSlide key={index}>
@@ -91,7 +100,7 @@ function Homefeed() {
           </Row>
         </Container>
 
-        <Container className={`my-5 py-3`}>
+        <Container className={`py-5`}>
           <Row className={styles.home_card_row}>
             <Col
               lg="6"
@@ -100,11 +109,14 @@ function Homefeed() {
               <div
                 className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
               >
-                <img
-                  src={casinoImg}
-                  className={styles.sec2Imgs}
-                  alt="sec1-col1"
-                />
+                <div className={styles.bgImgCasino}>
+                  {/* <img
+                    src={casinoImg}
+                    className={styles.sec2Imgs}
+                    alt="sec1-col1"
+                  /> */}
+                  <h1 className="text-white fw-bold">CASINO</h1>
+                </div>
                 <p className="text-center pt-4 pb-2">
                   Browse our giant range of casino games as Stake offers a fair
                   and fun online gambling experience. Play Slots, Live Casino,
@@ -121,11 +133,10 @@ function Homefeed() {
               <div
                 className={`text-center ${styles.cardSplitter} ${styles.home_container}`}
               >
-                <img
-                  src={esportImg}
-                  className={styles.sec2Imgs}
-                  alt="sec1-col1"
-                />
+                <div className={styles.bgImgArcade}>
+                  <h1 className="text-white fw-bold">ARCADE</h1>
+                </div>
+
                 <p className="text-center pt-4 pb-2">
                   Browse our giant range of casino games as Stake offers a fair
                   and fun online gambling experience. Play Slots, Live Casino,
@@ -136,12 +147,12 @@ function Homefeed() {
             </Col>
           </Row>
 
-          <Row className="py-5">
+          <Row className="mt-5 py-5">
             <TableList />
           </Row>
         </Container>
 
-        <Container className={`${styles.home_container} my-5 py-3`}>
+        <Container className={`${styles.home_container}  py-3`}>
           <Row className={styles.home_crypto_row}>
             <div className={styles.home_crypto_wrapper}>
               <h2>No crypto? No Problem.</h2>

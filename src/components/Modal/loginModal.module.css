@@ -34,10 +34,17 @@
   background-color: #1f0a31 !important;
 }
 
+@media only screen and (max-width: 990px) {
+  .modalWrapper {
+    width: 60%;
+    height: 55vh;
+    z-index: 3 !important;
+  }
+}
 
-@media only screen and (max-width:480px)  {
+@media only screen and (max-width: 480px) {
   .modalWrapper {
     width: 90%;
-    height: 35vh;
+    height: 45vh;
   }
 }
