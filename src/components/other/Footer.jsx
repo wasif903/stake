@@ -1,7 +1,5 @@
-import React from "react";
 import style from "./footer.module.css";
 import { Container } from "react-bootstrap";
-import { IoSendSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -11,7 +9,7 @@ const Footer = () => {
           <div className={style.footer_div}>
             <div className={style.footer_middle_div}>
               <div className={style.our_services}>
-                <h3 className="text-center">QUICK LINKS</h3>
+                <h3 className="text-center">INFINY.VIP</h3>
                 <ul className="text-center">
                   <li>Terms & Condition</li>
                   <li>KYC Policy</li>
@@ -20,12 +18,26 @@ const Footer = () => {
                   <li>FAQ</li>
                 </ul>
               </div>
+
+              <div className={style.our_services}>
+                <h3 className="text-center">GAMES</h3>
+                <ul className="text-center">
+                  <li>CRASH</li>
+                  <li>PLINKO</li>
+                  <li>LUCKY COLOUR</li>
+                  <li>DICE</li>
+                  <li>WHEEL</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className={style.footer_newsletter}>
             <h3 className="text-center">ABOUT US</h3>
             <p className="text-center">
-            At INFINY, a pinnacle of creativity, elegance, and security in the world of online betting. We pride ourselves on being a trusted affiliate program, welcoming newcomers with open arms to embark on an exhilarating gaming journey.
+              At INFINY, a pinnacle of creativity, elegance, and security in the
+              world of online betting. We pride ourselves on being a trusted
+              affiliate program, welcoming newcomers with open arms to embark on
+              an exhilarating gaming journey.
             </p>
             <div className={style.footer_input_area}>
               <input type="text" placeholder="ENTER EMAIL" />

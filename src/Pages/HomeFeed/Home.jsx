@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Header from "../../components/other/Header";
 import { Col, Container, Row } from "react-bootstrap";
 import MiniSidebar from "../../components/other/MiniSidebar";
 import Homefeed from "./Homefeed";
-import Footer from "../../components/other/Footer";
 import style from "./home.module.css";
 import Login from "../../components/Modal/Login";
 

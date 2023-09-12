@@ -35,7 +35,7 @@
 .inner_sidebar_active {
   background: #2d1b3d;
   height: fit-content;
-  padding: 1rem 1rem;
+  padding: 1rem 0.7rem;
   display: flex;
   flex-direction: column;
   align-items: self-start;
