@@ -52,7 +52,7 @@
 .footer_middle_div {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 10rem;
 }
 .our_services h3,
 .company h3 {
@@ -171,6 +171,11 @@
   .footer_newsletter p,
   .footer_input_area {
     width: 95%;
+  }
+  .footer_middle_div,
+  .footer_main {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 @media screen and (max-width: 350px) {

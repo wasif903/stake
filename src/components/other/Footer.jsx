@@ -1,7 +1,5 @@
-import React from "react";
 import style from "./footer.module.css";
 import { Container } from "react-bootstrap";
-import { IoSendSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -13,7 +11,7 @@ const Footer = () => {
           <div className={style.footer_div}>
             <div className={style.footer_middle_div}>
               <div className={style.our_services}>
-                <h3 className="text-center">QUICK LINKS</h3>
+                <h3 className="text-center">INFINY.VIP</h3>
                 <ul className="text-center">
                   <li onClick={() => navigate("/terms-and-condition")}>
                     Terms & Condition
@@ -24,6 +22,17 @@ const Footer = () => {
                   </li>
                   <li>Privacy Policy</li>
                   <li>FAQ</li>
+                </ul>
+              </div>
+
+              <div className={style.our_services}>
+                <h3 className="text-center">GAMES</h3>
+                <ul className="text-center">
+                  <li>CRASH</li>
+                  <li>PLINKO</li>
+                  <li>LUCKY COLOUR</li>
+                  <li>DICE</li>
+                  <li>WHEEL</li>
                 </ul>
               </div>
             </div>

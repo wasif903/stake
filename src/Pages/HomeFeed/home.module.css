@@ -23,13 +23,13 @@
 .iconWrapper {
   border-radius: 4px;
   background: #2c193b;
-  
+
   padding: 10px 25px 10px 25px;
   margin: 15px;
 }
 
 .icon {
-  color: #A464D7;
+  color: #a464d7;
   font-size: 25px;
 }
 
@@ -67,7 +67,7 @@
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   width: 15%;
-  border: solid 1px white  !important;
+  border: solid 1px white !important;
   background-color: #1f0a31 !important;
 }
 
@@ -146,6 +146,11 @@
   position: fixed;
 }
 
+.sec2Imgs {
+  width: 500px;
+  height: 300px;
+}
+
 @media only screen and (max-width: 1280px) {
   .iconWrapper {
     border-radius: 4px;
@@ -194,17 +199,21 @@
     padding: 0px;
   }
   .togglerBtn {
-   
     width: 50%;
-  
   }
-  
+
   .togglerBtn:hover {
-  
     width: 50%;
-   
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .sec2Imgs {
+    width: 250px;
+    height: 150px;
+  }
+}
+
 @media only screen and (max-width: 420px) {
   .wrapper {
     padding: 0px;
@@ -213,7 +222,7 @@
     font-size: 7vmin;
   }
   .home_crypto_icon img {
-    width: 16vmin;
+    width: auto;
   }
   .experience_heading,
   .experience_second_section p,
@@ -246,3 +255,9 @@
 }
 
 
+@media only screen and (max-width: 280px) {
+  .sec2Imgs {
+    width: 150px;
+    height: 100px;
+  }
+}

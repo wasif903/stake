@@ -1,10 +1,10 @@
-import React from "react";
 import style from "./minisidebar.module.css";
-import bubble from "../../assets/sidebar-logos/Vector (1).svg";
-import crown from "../../assets/sidebar-logos/Vector (2).svg";
-import b from "../../assets/sidebar-logos/Vector (3).svg";
-import chat from "../../assets/sidebar-logos/Group 35.svg";
-import card from "../../assets/sidebar-logos/Vector.svg";
+
+import sidebar1 from "../../assets/sidebar-logos/sidebar1.png";
+import sidebar2 from "../../assets/sidebar-logos/sidebar2.png";
+import sidebar3 from "../../assets/sidebar-logos/sidebar3.png";
+import sidebar4 from "../../assets/sidebar-logos/sidebar4.png";
+import sidebar5 from "../../assets/sidebar-logos/sidebar5.png";
 
 const MiniSidebar = ({ isSidebar }) => {
   return (
@@ -21,7 +21,7 @@ const MiniSidebar = ({ isSidebar }) => {
         }
       >
         <span>
-          <img src={card} alt="" />
+          <img src={sidebar1} alt="" />
           <p
             className={
               isSidebar
@@ -33,7 +33,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={bubble} alt="" />
+          <img src={sidebar2} alt="" />
           <p
             className={
               isSidebar
@@ -45,7 +45,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={crown} alt="" />
+          <img src={sidebar3} alt="" />
           <p
             className={
               isSidebar
@@ -57,7 +57,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={b} alt="" />
+          <img src={sidebar4} alt="" />
           <p
             className={
               isSidebar
@@ -69,7 +69,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={chat} alt="" />
+          <img src={sidebar5} alt="" />
           <p
             className={
               isSidebar

@@ -1,19 +1,22 @@
 import { Col, Container, Row } from "react-bootstrap";
-import sec1 from "../../assets/home/sec1-img2.png";
+import slider1 from "../../assets/home/sec1-img2.png";
+import slider2 from "../../assets/home/slider2.jpg";
+import slider3 from "../../assets/home/slider3.png";
 import styles from "./home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import Header from "../../components/other/Header";
-import casinoImg from "../../assets/home/sec2-col1.png";
-import esportImg from "../../assets/home/sec2-col2.jfif";
+import casinoImg from "../../assets/home/sec2.jpg";
+import esportImg from "../../assets/home/sec2-col2.jpg";
 import TableList from "../../components/Table/TableList";
 import gpay from "../../assets/crypto/Vector (1).svg";
 import circle from "../../assets/crypto/Vector.svg";
 import Footer from "../../components/other/Footer";
 import { useState } from "react";
-import Login from "../../components/Modal/Login";
-import applePay from "../../assets/home/icon3.svg";
+import gcash from "../../assets/home/gpay.png";
+import mayapay from "../../assets/home/mayapay.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 function Homefeed() {
   const icons = [
@@ -35,6 +38,17 @@ function Homefeed() {
     },
   ];
 
+  const sliderImgs = [
+    {
+      image: slider1,
+    },
+    {
+      image: slider2,
+    },
+    {
+      image: slider3,
+    },
+  ];
 
   const [selector, setSelector] = useState(false);
 
@@ -74,9 +88,24 @@ function Homefeed() {
               </div>
             </Col>
             <Col lg="6">
-              <div className="text-center">
-                <img src={sec1} alt="img" className={styles.section} />
-              </div>
+              <Swiper
+                spaceBetween={0}
+                slidesPerView={1}
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
+                {sliderImgs.map((img) => {
+                  <SwiperSlide>
+                    <div className="text-center">
+                      <img
+                        src={img.image}
+                        alt="img"
+                        className={styles.section}
+                      />
+                    </div>
+                  </SwiperSlide>;
+                })}
+              </Swiper>
             </Col>
           </Row>
         </Container>
@@ -92,7 +121,7 @@ function Homefeed() {
               >
                 <img
                   src={casinoImg}
-                  style={{ width: "100%", borderRadius: "12px" }}
+                  className={styles.sec2Imgs}
                   alt="sec1-col1"
                 />
                 <p className="text-center pt-4 pb-2">
@@ -113,7 +142,7 @@ function Homefeed() {
               >
                 <img
                   src={esportImg}
-                  style={{ width: "100%", borderRadius: "12px" }}
+                  className={styles.sec2Imgs}
                   alt="sec1-col1"
                 />
                 <p className="text-center pt-4 pb-2">
@@ -139,8 +168,16 @@ function Homefeed() {
             <div className={styles.home_crypto_icon}>
               <img src={gpay} alt="" />
               <img src={circle} alt="" />
-              <img src={applePay} alt="" />
-              <img src={circle} alt="" />
+              <img
+                src={gcash}
+                style={{ width: "100px", height: "100px" }}
+                alt=""
+              />
+              <img
+                src={mayapay}
+                style={{ width: "100px", height: "100px" }}
+                alt=""
+              />
             </div>
           </Row>
         </Container>
@@ -209,8 +246,6 @@ function Homefeed() {
           <Footer />
         </Container>
       </div>
-
-     
     </>
   );
 }
