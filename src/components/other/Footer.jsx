@@ -16,11 +16,13 @@ const Footer = () => {
                   <li onClick={() => navigate("/terms-and-condition")}>
                     Terms & Condition
                   </li>
-                  <li>KYC Policy</li>
+                  <li onClick={() => navigate("/kyc")}>KYC Policy</li>
                   <li onClick={() => navigate("/responsible-gaming")}>
                     Responsible Gaming
                   </li>
-                  <li>Privacy Policy</li>
+                  <li onClick={() => navigate("/privacy-policy")}>
+                    Privacy Policy
+                  </li>
                   <li>FAQ</li>
                 </ul>
               </div>

@@ -38,17 +38,7 @@ function Homefeed() {
     },
   ];
 
-  const sliderImgs = [
-    {
-      image: slider1,
-    },
-    {
-      image: slider2,
-    },
-    {
-      image: slider3,
-    },
-  ];
+  const sliderImgs = [slider1, slider2, slider3];
 
   const [selector, setSelector] = useState(false);
 
@@ -88,22 +78,13 @@ function Homefeed() {
               </div>
             </Col>
             <Col lg="6">
-              <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-              >
-                {sliderImgs.map((img) => {
-                  <SwiperSlide>
-                    <div className="text-center">
-                      <img
-                        src={img.image}
-                        alt="img"
-                        className={styles.section}
-                      />
-                    </div>
-                  </SwiperSlide>;
+              <Swiper spaceBetween={10} slidesPerView={1}>
+                {sliderImgs.map((img, index) => {
+                  return (
+                    <SwiperSlide key={index}>
+                      <img src={img} alt="img" className={styles.section} />
+                    </SwiperSlide>
+                  );
                 })}
               </Swiper>
             </Col>
