@@ -2,8 +2,10 @@ import React from "react";
 import style from "./footer.module.css";
 import { Container } from "react-bootstrap";
 import { IoSendSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className={style.footer_wrapper}>
       <Container fluid className={style.footer_container}>
@@ -15,7 +17,9 @@ const Footer = () => {
                 <ul className="text-center">
                   <li>Terms & Condition</li>
                   <li>KYC Policy</li>
-                  <li>Responsible Gaming</li>
+                  <li onClick={() => navigate("/responsible-gaming")}>
+                    Responsible Gaming
+                  </li>
                   <li>Privacy Policy</li>
                   <li>FAQ</li>
                 </ul>
@@ -25,7 +29,10 @@ const Footer = () => {
           <div className={style.footer_newsletter}>
             <h3 className="text-center">ABOUT US</h3>
             <p className="text-center">
-            At INFINY, a pinnacle of creativity, elegance, and security in the world of online betting. We pride ourselves on being a trusted affiliate program, welcoming newcomers with open arms to embark on an exhilarating gaming journey.
+              At INFINY, a pinnacle of creativity, elegance, and security in the
+              world of online betting. We pride ourselves on being a trusted
+              affiliate program, welcoming newcomers with open arms to embark on
+              an exhilarating gaming journey.
             </p>
             <div className={style.footer_input_area}>
               <input type="text" placeholder="ENTER EMAIL" />
