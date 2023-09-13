@@ -118,7 +118,7 @@ function Homefeed() {
                   <h1 className="text-white fw-bold">CASINO</h1>
                 </div>
                 <p className="text-center pt-4 pb-2">
-                  Browse our giant range of casino games as Stake offers a fair
+                  Browse our giant range of casino games as Infinity offers a fair
                   and fun online gambling experience. Play Slots, Live Casino,
                   Blackjack, Baccarat.
                 </p>
@@ -138,7 +138,7 @@ function Homefeed() {
                 </div>
 
                 <p className="text-center pt-4 pb-2">
-                  Browse our giant range of casino games as Stake offers a fair
+                  Browse our giant range of casino games as Infinity offers a fair
                   and fun online gambling experience. Play Slots, Live Casino,
                   Blackjack, Baccarat.
                 </p>

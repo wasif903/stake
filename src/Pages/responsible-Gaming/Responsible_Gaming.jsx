@@ -9,7 +9,7 @@ const Responsible_Gaming = () => {
       <Container className={style.Responsible_Gaming_wrapper}>
         <h1 className="pb-3">Responsible Gaming</h1>
         <div className="d-flex flex-column gap-3">
-          <p>Last updated: 2022.01.01</p>
+          <p>Last updated: 2023.02.01</p>
           <p>Please read this information carefully for your own benefit.</p>
           <p>
             infiny.vip is committed to endorsing responsible gaming as a policy
