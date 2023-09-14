@@ -118,9 +118,9 @@ function Homefeed() {
                   <h1 className="text-white fw-bold">CASINO</h1>
                 </div>
                 <p className="text-center pt-4 pb-2">
-                  Browse our giant range of casino games as Infinity offers a fair
-                  and fun online gambling experience. Play Slots, Live Casino,
-                  Blackjack, Baccarat.
+                  Browse our giant range of casino games as Infinity offers a
+                  fair and fun online gambling experience. Play Slots, Live
+                  Casino, Blackjack, Baccarat.
                 </p>
 
                 <button className={`btn ${styles.btn}`}>PLAY NOW</button>
@@ -138,9 +138,9 @@ function Homefeed() {
                 </div>
 
                 <p className="text-center pt-4 pb-2">
-                  Browse our giant range of casino games as Infinity offers a fair
-                  and fun online gambling experience. Play Slots, Live Casino,
-                  Blackjack, Baccarat.
+                  Browse our giant range of casino games as Infinity offers a
+                  fair and fun online gambling experience. Play Slots, Live
+                  Casino, Blackjack, Baccarat.
                 </p>
                 <button className={`btn ${styles.btn}`}>PLAY NOW</button>
               </div>
@@ -167,7 +167,7 @@ function Homefeed() {
               />
               <img
                 src={mayapay}
-                style={{ width: "100px", height: "100px" }}
+                style={{ width: "120px", height: "120px" }}
                 alt=""
               />
             </div>
