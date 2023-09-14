@@ -21,7 +21,7 @@ const MiniSidebar = ({ isSidebar }) => {
         }
       >
         <span>
-          <img src={sidebar1} alt="" />
+          <img src={sidebar1} className={style.buzz} alt="" />
           <p
             className={
               isSidebar
@@ -33,7 +33,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={sidebar2} alt="" />
+          <img src={sidebar2} className={style.buzz} alt="" />
           <p
             className={
               isSidebar
@@ -45,7 +45,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={sidebar3} alt="" />
+          <img src={sidebar3} className={style.buzz} alt="" />
           <p
             className={
               isSidebar
@@ -57,7 +57,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={sidebar4} alt="" />
+          <img src={sidebar4} className={style.buzz} alt="" />
           <p
             className={
               isSidebar
@@ -69,7 +69,7 @@ const MiniSidebar = ({ isSidebar }) => {
           </p>
         </span>
         <span>
-          <img src={sidebar5} alt="" />
+          <img src={sidebar5} className={style.buzz} alt="" />
           <p
             className={
               isSidebar

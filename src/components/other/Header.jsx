@@ -51,7 +51,7 @@ const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
               onClick={() => setIsideBar(!isSidebar)}
               style={{ cursor: "pointer" }}
             /> */}
-            <img src={sidebar1} />
+            <img src={sidebar1} className={style.buzz} />
           </div>
           <div>
             {/* <BsChatText
@@ -59,7 +59,7 @@ const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
               onClick={() => setIsideBar(!isSidebar)}
               style={{ cursor: "pointer" }}
             /> */}
-            <img src={sidebar2} />
+            <img src={sidebar2} className={style.buzz}/>
           </div>
           <div className={style.wrapHomeIcon}>
             {/* <AiFillHome
@@ -67,21 +67,21 @@ const Header = ({ setLoginModal, setIsideBar, isSidebar }) => {
               onClick={() => setIsideBar(false)}
               style={{ cursor: "pointer" }}
             /> */}
-            <img src={sidebar3} />
+            <img src={sidebar3} className={style.buzz}/>
           </div>
           <div className="d-flex flex-column text-end">
             {/* <BsAward
               className={style.mob_barsSearch}
               style={{ cursor: "pointer" }}
             /> */}
-            <img src={sidebar4} />
+            <img src={sidebar4} className={style.buzz} />
           </div>
           <div className="d-flex flex-column text-end">
             {/* <BsSearch
               className={style.mob_barsSearch}
               style={{ cursor: "pointer" }}
             /> */}
-            <img src={sidebar5} />
+            <img src={sidebar5} className={style.buzz} />
           </div>
         </div>
       </div>
