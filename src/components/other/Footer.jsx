@@ -1,6 +1,7 @@
 import style from "./footer.module.css";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Partners from "../FooterLogos/Partners";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -53,6 +54,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="text-center">
+          <Partners />
+        </div>
+
         <div className={style.copyright}>
           <p>Copyright © 2023 </p>
         </div>
